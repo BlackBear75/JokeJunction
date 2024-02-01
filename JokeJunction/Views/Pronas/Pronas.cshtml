@@ -1,0 +1,49 @@
+﻿
+
+<link rel="stylesheet" href="~/css/Pronas.css" asp-append-version="true" />
+
+
+
+<div class="container">
+
+    <div class="text">
+        Цей сайт створенний як перший Пет-проект для мого портфоліо і зроблений для того щоб зробити ваш день
+        хоть трішечки
+        веселішим , тут можна подивитися на цікаві анекдоти і опублікувати анекдоти і якщо у вас є ідеї для
+        покращення сайту можете написати головному розробнику
+
+    </div>
+    <div class="img">
+        <h1>Головний розраб</h1>
+        <img src="~/css/images/billi.jpg" alt="joke">
+
+     
+
+        <a class="email" href="#">
+            <img class="img_pochta_pr" src="~/css/images/POCHTA-whete.png"
+                 alt="pochta"> fanat991@ukr.net
+        </a>
+
+
+
+        <a class="giihub" href="https://github.com/BlackBear75">
+            <img class="img_github_pr" src="~/css/images/Github-white.png"
+                 alt="git"> BlackBear75
+        </a>
+
+
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Отримуємо елемент .main_title
+        var mainTitle = document.querySelector(".container");
+
+        // Додаємо клас .show після короткої затримки (наприклад, 500 мілісекунд)
+        setTimeout(function () {
+            mainTitle.classList.add("show");
+        }, 500);
+    });
+</script>

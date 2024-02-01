@@ -1,0 +1,113 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.Creative_content {
+    opacity: 0;
+    /* Встановлення початкової прозорості на 0 */
+    transition: opacity 2s ease;
+    /* Застосування анімації для властивості opacity тривалістю 1 секунда і типом ease */
+}
+
+    .Creative_content.show {
+        opacity: 1;
+        /* Зміна прозорості на 1 при додаванні класу .show */
+    }
+
+
+.Creative_content {
+    color: white;
+}
+
+
+.h1_title {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    font-size: 38px;
+    width: 600;
+    margin-top: 45px;
+}
+
+.h1_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    line-height: 90px;
+    font-size: 30px;
+}
+
+
+
+.creative_main {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+.creative_main_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+    .creative_main_list li {
+        margin-bottom: 15px;
+    }
+
+.creative_main_list_item {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button_send_joke {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+}
+
+    .button_send_joke:hover {
+        background-color: #45a049;
+    }

@@ -1,0 +1,52 @@
+﻿@model JokeJunction.Domain.ViewModels.Joke.JokeViewModel
+
+@{
+    ViewBag.Title = "Creative";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/Creative.css" asp-append-version="true" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,regular,900" rel="stylesheet" />
+
+<div class="Creative_content">
+    <h1 class="h1_title">Вітаю, шановний користувачу<br></h1>
+    <p class="h1_content">
+        Дякую, що ти допомагаєш збільшити асортимент жартів
+        і робиш життя інших
+        користувачів трішечки веселішим
+    </p>
+
+    <div class="creative_main">
+        <form asp-controller="Creative" asp-action="CreateJoke" method="post" class="creative_main_form">
+            <ul class="creative_main_list">
+                <li>
+                    <label for="jokeTitle">Заголовок жарту</label>
+                    <input asp-for="Name" id="jokeTitle" class="creative_main_list_item">
+                </li>
+                <li>
+                    <label for="jokeText">Тут напиши свій жарт</label>
+                    <textarea asp-for="Content" id="jokeText" class="creative_main_list_item"></textarea>
+                </li>
+                <li>
+                    <label for="jokeGenre">Тут обери який жанр</label>
+                    <select asp-for="TypeJoke" id="jokeGenre" class="creative_main_list_item">
+                        <option value="3">Чорний гумор</option>
+                        <option value="2">Про політику</option>
+                        <option value="0">Жартівливий</option>
+                    </select>
+                </li>
+            </ul>
+            <button type="submit" class="button_send_joke">Відправити жарт</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mainTitle = document.querySelector(".Creative_content");
+
+        setTimeout(function () {
+            mainTitle.classList.add("show");
+        }, 500);
+    });
+</script>

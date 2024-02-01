@@ -1,0 +1,34 @@
+﻿@model JokeJunction.Domain.ViewModels.Account.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+<div class="login_container">
+    <h1 class="title_login">Вхід в обліковий запис</h1>
+
+   <form asp-controller="Account" asp-action="Login" method="post" class="login_container_list">
+        <div class="login_container_item">
+            <label asp-for="UserName"></label>
+            <input asp-for="UserName" id="loginInput" class="login_container_list_item">
+        </div>
+
+        <div class="login_container_item">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" id="passwordInput" type="password" class="login_container_list_item">
+        </div>
+
+        <button type="submit" id="loginButton" class="button_send_login">Відправити</button>
+        <br>
+
+        <div class="login_container_item">
+            <a class="Registration_link" href="Register">Реєстрація</a>
+        </div>
+    </form>
+    </div>
+   
+
+

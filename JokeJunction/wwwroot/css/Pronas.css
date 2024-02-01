@@ -1,0 +1,119 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+}
+
+.caption {
+    position: relative;
+    z-index: 10;
+}
+
+.image-container:hover .caption {
+    opacity: 1;
+}
+
+.container .text {
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 300px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+    .img .img_github_pr,
+    .img .img_pochta_pr {
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .img .email,
+    .img .giihub {
+        font-size: 16px;
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.text {
+    color: white;
+}
+
+
+.img h1 {
+    color: #6af7cc;
+    font-size: 32px;
+    font-weight: 500;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination li {
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+.pagination a {
+        display: block;
+        padding: 5px 10px;
+        background-color: #0077cc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+ .pagination a:hover {
+
+background-color: #0056b3;
+}

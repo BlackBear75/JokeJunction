@@ -1,0 +1,67 @@
+﻿@model JokeJunction.Domain.Entity.JokesViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/joke.css" asp-append-version="true" />
+<link href="https://fonts.googleapis.com/css?family=Raleway:600,700,900" rel="stylesheet" />
+
+<h1 class="joke_title">Найкращі жарти в категорії чорний гумор</h1>
+
+<div class="main_joke">
+    <div class="main_text">
+        <ul>
+            @foreach (var joke in Model.Jokes)
+            {
+                <li>@joke.Name <br> @joke.Id @joke.Content</li>
+                <br />
+            }
+        </ul>
+    </div>
+
+    <div class="main_change">
+        <ul>
+            <li><a class="main_change_link" href="/Joke/GetJokes">Усі жарти</a></li>
+
+            <li><a class="main_change_link" href="">Чорний гумор</a></li>
+            <li><a class="main_change_link" href="">Кримінал</a></li>
+        </ul>
+    </div>
+</div>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        @for (int i = 1; i <= Model.PagingInfo.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.PagingInfo.CurrentPage ? "active" : "")">
+                <a class="page-link" href="@Url.Action("GetJokes", new { page = i })">@i</a>
+            </li>
+        }
+    </ul>
+</nav>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Отримуємо елемент .main_title
+        var mainTitle = document.querySelector(".main_joke");
+
+        // Додаємо клас .show після короткої затримки (наприклад, 500 мілісекунд)
+        setTimeout(function () {
+            mainTitle.classList.add("show");
+        }, 500);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Отримуємо елемент .main_title
+        var mainTitle = document.querySelector(".joke_title");
+
+        // Додаємо клас .show після короткої затримки (наприклад, 500 мілісекунд)
+        setTimeout(function () {
+            mainTitle.classList.add("show");
+        }, 500);
+    });
+
+
+</script>

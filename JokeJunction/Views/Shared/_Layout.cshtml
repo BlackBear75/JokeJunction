@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - JokeJunction</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/JokeJunction.styles.css" asp-append-version="true" />
+
+
+	<link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+	
+
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,regular,900" rel="stylesheet" />
+			<a href="/Home/Index"><img class="logo_img" src="/css/images/joke.png" alt="logo"></a>
+		</div>
+		<div class="menu">
+			<ul class="menu_list">
+				<li class="menu_item"><a class="menu_link" href="/Pronas/Pronas">Про нас</a></li>
+				<li class="menu_item"><a class="menu_link" href="/Joke/GetJokes">Жарти</a></li>
+				@if (User.Identity.IsAuthenticated)
+    {
+				<li class="menu_item"><a class="menu_link" href="/Creative/Creative">Креатив</a></li>
+	}
+				<li class="menu_last">
+					<a class="menu_login" href="#" onclick="toggleDropdown()">Меню</a>
+					<ul class="dropdown_menu" id="dropdownMenu">
+						<li><a href="/Account/Login">Увійти</a></li>
+						<li><a href="/Account/Register">Реєстрація</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	
+
+	
+	
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var dropdownMenu = document.getElementById("dropdownMenu");
+			var menuButton = document.querySelector(".menu_login");
+
+			// Відкрити або закрити випадаюче меню при натисканні на кнопку меню
+			menuButton.addEventListener("click", function (event) {
+				event.stopPropagation(); // Зупинити подальшу обробку події, щоб не викликати "click" на document
+				dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+			});
+
+			// Закрити випадаюче меню, якщо користувач клікне поза ним
+			document.addEventListener("click", function (event) {
+				if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+					dropdownMenu.style.display = "none";
+				}
+			});
+		});
+	</script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("pageScripts", required: false)
+</body>
+</html>

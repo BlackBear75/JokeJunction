@@ -1,0 +1,140 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Rubick', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+    min-height: 100vh;
+    /* Мінімальна висота на весь висоту вікна */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main_joke {
+    opacity: 0;
+    /* Встановлення початкової прозорості на 0 */
+    transition: opacity 2s ease;
+    /* Застосування анімації для властивості opacity тривалістю 1 секунда і типом ease */
+}
+
+.main_joke.show {
+    opacity: 1;
+    /* Зміна прозорості на 1 при додаванні класу .show */
+}
+
+.joke_title {
+    opacity: 0;
+    /* Встановлення початкової прозорості на 0 */
+    transition: opacity 2s ease;
+    /* Застосування анімації для властивості opacity тривалістю 1 секунда і типом ease */
+}
+
+.joke_title.show {
+    opacity: 1;
+    /* Зміна прозорості на 1 при додаванні класу .show */
+}
+.main_joke {
+    opacity: 0;
+    transition: opacity 2s ease;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.main_joke.show {
+    opacity: 1;
+}
+
+.joke_title {
+    opacity: 0;
+    transition: opacity 2s ease;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 10;
+    font-family: "Raleway";
+}
+
+.joke_title.show {
+    opacity: 1;
+}
+
+.main_text {
+    color: white;
+    margin: 0px 0px 0px 20px;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main_change {
+    font-size: 20px;
+    border: 2px solid red;
+    padding-left: 20px;
+    background-color: gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-left: auto;
+    width: 20%;
+}
+
+.main_change_link:hover {
+    color: aqua;
+    transition: all 1s ease;
+}
+
+/* Доданий стиль для пристосування висоти .main_change до контенту .main_text */
+.main_joke {
+    align-items: flex-start;
+}
+
+.pagination {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Якщо потрібно, можна задати власний z-index */
+}

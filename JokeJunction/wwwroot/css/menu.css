@@ -1,0 +1,168 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+    min-height: 100vh;
+    /* Мінімальна висота на весь висоту вікна */
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    color: #000;
+}
+
+
+.menu_list {
+    font-family: "Lato" 400;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu_item {
+    color: white;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 45px;
+}
+
+    .menu_item::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: gold;
+        transition: width 0.3s ease, left 0.3s ease;
+        /* Плавний перехід ширини та положення */
+    }
+
+    .menu_item:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .menu_item:last-child {
+        margin-right: 100px;
+    }
+
+.menu_login {
+    background-color: black;
+    display: inline-block;
+    width: 120px;
+    border-bottom: none;
+    padding-left: 40px;
+    border-radius: 5%;
+    color: white;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 45px;
+}
+
+.dropdown_menu {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    /* Задаємо ширину випадаючого меню таку ж, як і ширина кнопки меню */
+}
+
+    .dropdown_menu a {
+        display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+        /* Задаємо ширину по всій ширині батьківського елемента */
+    }
+
+        .dropdown_menu a:hover {
+            background-color: red;
+        }
+
+.menu_login:hover {
+    background-color: #0000005a;
+    transition: all 0.25s ease;
+}
+
+.menu_link {
+    border-bottom: none;
+}
+
+.logo a {
+    border-bottom: none;
+}
+
+.logo_img {
+    position: relative;
+    top: 0;
+    left: 20px;
+    margin: 20px;
+    height: 45px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo_img {
+        position: relative;
+        left: 10px;
+        height: 25px;
+    }
+}
+
+.logo_img:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease;
+}

@@ -1,0 +1,46 @@
+﻿@model JokeJunction.Domain.ViewModels.Account.RegisterViewModel
+
+@{
+    ViewBag.Title = "Реєстрація";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/registration.css" asp-append-version="true" />
+
+<div class="Registration_container">
+    <h1 class="title_login">Реєстрація</h1>
+
+    <div class="Registration_container_list">
+        <form asp-controller="Account" asp-action="Register" method="post" class="Registration_form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="Registration_container_item">
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" name="UserName" class="Registration_container_list_item" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="Registration_container_item">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" name="Email" class="Registration_container_list_item" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="Registration_container_item">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" name="Password" type="password" class="Registration_container_list_item" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="Registration_container_item">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" name="ConfirmPassword" type="password" class="Registration_container_list_item" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+           
+            <button type="submit" class="button_send_regin">Зареєструватися</button>
+            <div class="registration_container_item_2">
+                <a class="Registration_link" href="Login">Увійти в обліковий запис</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\JokeJunction.bundle.scp.css",
+      "PackagePath": "staticwebassets\\JokeJunction.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\Creative.css",
+      "PackagePath": "staticwebassets\\css\\Creative.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\Pronas.css",
+      "PackagePath": "staticwebassets\\css\\Pronas.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\backImage.css",
+      "PackagePath": "staticwebassets\\css\\backImage.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\card.css",
+      "PackagePath": "staticwebassets\\css\\card.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\1234.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\1234.jpg"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\Github-white.png",
+      "PackagePath": "staticwebassets\\css\\images\\Github-white.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\Github.png",
+      "PackagePath": "staticwebassets\\css\\images\\Github.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\POCHTA-whete.png",
+      "PackagePath": "staticwebassets\\css\\images\\POCHTA-whete.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\POCHTA.png",
+      "PackagePath": "staticwebassets\\css\\images\\POCHTA.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\bg.jpg"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\bg1.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\bg1.jpg"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\billi.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\billi.jpg"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\borat.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\borat.jpg"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\j1.png",
+      "PackagePath": "staticwebassets\\css\\images\\j1.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\joke.png",
+      "PackagePath": "staticwebassets\\css\\images\\joke.png"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\joke.css",
+      "PackagePath": "staticwebassets\\css\\joke.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\label.css",
+      "PackagePath": "staticwebassets\\css\\label.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\menu.css",
+      "PackagePath": "staticwebassets\\css\\menu.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\paragraph.css",
+      "PackagePath": "staticwebassets\\css\\paragraph.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\registration.css",
+      "PackagePath": "staticwebassets\\css\\registration.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.JokeJunction.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.JokeJunction.props",
+      "PackagePath": "build\\JokeJunction.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.JokeJunction.props",
+      "PackagePath": "buildMultiTargeting\\JokeJunction.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.JokeJunction.props",
+      "PackagePath": "buildTransitive\\JokeJunction.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

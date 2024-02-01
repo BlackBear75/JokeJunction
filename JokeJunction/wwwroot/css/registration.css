@@ -1,0 +1,105 @@
+﻿a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.registration_container_item_2 {
+    padding-top:25px;
+    margin-bottom:10px;
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.Registration_container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 0 auto;
+}
+
+.title_login {
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.Registration_container_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Registration_container_item {
+    margin-bottom: 10px;
+}
+
+.Registration_container_list p {
+    margin: 5px 0;
+}
+
+.Registration_container_list_item {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button_send_regin {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .button_send_regin:hover {
+        background-color: #45a049;
+    }
+
+.Login_link {
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+    .Login_link:hover {
+        color: #0056b3;
+        border-bottom: 1px solid #007bff;
+    }
