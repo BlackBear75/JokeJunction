@@ -54,31 +54,31 @@ namespace JokeJunction.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<JokeViewModel>> CreateJoke(JokeViewModel jokeViewModel)
+        public async Task<IBaseResponse<Joke>> CreateJoke(JokeViewModel jokeViewModel, ApplicationUser user)
         {
-            var baseResponse = new BaseResponse<JokeViewModel>();
+            var baseResponse = new BaseResponse<Joke>();
             try
             {
                 var joke = new Joke()
                 {
-
+                    
+                    UserId = user.Id,
                     Content = jokeViewModel.Content,
                     Name = jokeViewModel.Name,
-
                     TypeJoke = Enum.Parse<TypeJoke>(jokeViewModel.TypeJoke)
                 };
 
                 await _jokeRepository.Create(joke);
 
+
                 baseResponse.StatusCode = StatusCode.OK;
-               
-               
+                baseResponse.Data = joke;
             }
             catch (Exception ex)
             {
-                return new BaseResponse<JokeViewModel>()
+                return new BaseResponse<Joke>()
                 {
-                    Description = $"[CreateCar] : {ex.Message}",
+                    Description = $"[CreateJoke] : {ex.Message}",
                     StatusCode = StatusCode.InternalServerError
                 };
             }
@@ -190,6 +190,12 @@ namespace JokeJunction.Service.Implementations
                     baseResponse.StatusCode = StatusCode.UserNotFound;
                     return baseResponse;
                 }
+                int number = 1;
+               foreach (var joke in jokes)
+                {
+                    joke.Id = number;
+                    number++;
+                }
                 
                 baseResponse.Data = jokes;
                 baseResponse.StatusCode = StatusCode.OK;
@@ -201,6 +207,35 @@ namespace JokeJunction.Service.Implementations
                 return new BaseResponse<IEnumerable<Joke>>()
                 {
                     Description = $"[GetCars] : {ex.Message}",
+                    StatusCode = StatusCode.InternalServerError
+                };
+            }
+        }
+
+        public async Task<IBaseResponse<IEnumerable<Joke>>> GetUserJoke(ApplicationUser user)
+        {
+            var baseResponse = new BaseResponse<IEnumerable<Joke>>();
+            try
+            {
+                var jokes = await _jokeRepository.GetUserJoke(user);
+
+                if (jokes.Count == 0)
+                {
+                    baseResponse.Description = "Найдено 0 элементов";
+                    baseResponse.StatusCode = StatusCode.UserNotFound;
+                    return baseResponse;
+                }
+
+                baseResponse.Data = jokes;
+                baseResponse.StatusCode = StatusCode.OK;
+
+                return baseResponse;
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<IEnumerable<Joke>>()
+                {
+                    Description = $"[GetJokes] : {ex.Message}",
                     StatusCode = StatusCode.InternalServerError
                 };
             }

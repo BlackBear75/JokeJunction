@@ -1,17 +1,20 @@
-﻿using JokeJunction.Domain.Enum;
+﻿using JokeJunction.Domain.Entity;
+using JokeJunction.Domain.Enum;
 using JokeJunction.Domain.ViewModels.Joke;
 using JokeJunction.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 [Authorize]
 public class CreativeController : Controller
 {
     private readonly IJokeService _jokeService;
-
-    public CreativeController(IJokeService jokeService)
+    private readonly UserManager<ApplicationUser> _userManager;
+    public CreativeController(IJokeService jokeService, UserManager<ApplicationUser> userManager)
     {
         _jokeService = jokeService;
+        _userManager = userManager;
     }
 
     [HttpGet]
@@ -25,7 +28,11 @@ public class CreativeController : Controller
     {
         if (ModelState.IsValid)
         {
-            var response = await _jokeService.CreateJoke(jokeViewModel);
+
+            var user = await _userManager.GetUserAsync(User);
+            var response = await _jokeService.CreateJoke(jokeViewModel, user);
+
+
 
             if (response.StatusCode == JokeJunction.Domain.Enum.StatusCode.OK)
             {

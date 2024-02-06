@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - JokeJunction</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/JokeJunction.styles.css" asp-append-version="true" />
 
+   
 
 	<link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
 	
@@ -32,6 +31,9 @@
 					<ul class="dropdown_menu" id="dropdownMenu">
 						<li><a href="/Account/Login">Увійти</a></li>
 						<li><a href="/Account/Register">Реєстрація</a></li>
+						@if (User.Identity.IsAuthenticated){
+						<li><a href="/Account/Profile">Профіль</a></li>
+						}
 					</ul>
 				</li>
 

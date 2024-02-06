@@ -12,7 +12,10 @@ namespace JokeJunction.Service.Interfaces
         
         Task<IBaseResponse<JokeViewModel>> GetJoke(int id);
 
-        Task<IBaseResponse<JokeViewModel>> CreateJoke(JokeViewModel carViewModel);
+        Task<IBaseResponse<IEnumerable<Joke>>> GetUserJoke(ApplicationUser user);
+
+
+        Task<IBaseResponse<Joke>> CreateJoke(JokeViewModel carViewModel,ApplicationUser user);
 
         Task<IBaseResponse<bool>> DeleteJoke(int id);
 

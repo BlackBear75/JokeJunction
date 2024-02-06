@@ -87,10 +87,147 @@ namespace JokeJunction.Controllers
         }
 
 
+        [HttpGet]
+        public async Task<IActionResult> Criminal(int page = 1)
+        {
+            var response = await _carService.GetJokes();
 
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            {
+                // Сортування за полем TypeJoke зі значенням 4
+                var jokes = response.Data
+                    .Where(j => (int)j.TypeJoke == 1)
+                    .OrderBy(j => j.TypeJoke)
+                    .ToList();
 
+                var totalCount = jokes.Count();
+                jokes = jokes.Skip((page - 1) * PageSize).Take(PageSize).ToList();
 
+                var model = new JokesViewModel
+                {
+                    Jokes = jokes,
+                    PagingInfo = new PagingInfo
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = PageSize,
+                        TotalItems = totalCount
+                    }
+                };
 
+                return View(model);
+            }
+            else
+            {
+                // Обробка випадку, коли відповідь не є OK
+                return RedirectToAction("Error");
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> Humorous(int page = 1)
+        {
+            var response = await _carService.GetJokes();
+
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            {
+                // Сортування за полем TypeJoke зі значенням 4
+                var jokes = response.Data
+                    .Where(j => (int)j.TypeJoke == 0)
+                    .OrderBy(j => j.TypeJoke)
+                    .ToList();
+
+                var totalCount = jokes.Count();
+                jokes = jokes.Skip((page - 1) * PageSize).Take(PageSize).ToList();
+
+                var model = new JokesViewModel
+                {
+                    Jokes = jokes,
+                    PagingInfo = new PagingInfo
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = PageSize,
+                        TotalItems = totalCount
+                    }
+                };
+
+                return View(model);
+            }
+            else
+            {
+                // Обробка випадку, коли відповідь не є OK
+                return RedirectToAction("Error");
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> IT_Joke(int page = 1)
+        {
+            var response = await _carService.GetJokes();
+
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            {
+                // Сортування за полем TypeJoke зі значенням 4
+                var jokes = response.Data
+                    .Where(j => (int)j.TypeJoke == 4)
+                    .OrderBy(j => j.TypeJoke)
+                    .ToList();
+
+                var totalCount = jokes.Count();
+                jokes = jokes.Skip((page - 1) * PageSize).Take(PageSize).ToList();
+
+                var model = new JokesViewModel
+                {
+                    Jokes = jokes,
+                    PagingInfo = new PagingInfo
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = PageSize,
+                        TotalItems = totalCount
+                    }
+                };
+
+                return View(model);
+            }
+            else
+            {
+                // Обробка випадку, коли відповідь не є OK
+                return RedirectToAction("Error");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Politic(int page = 1)
+        {
+            var response = await _carService.GetJokes();
+
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
+            {
+                // Сортування за полем TypeJoke зі значенням 4
+                var jokes = response.Data
+                    .Where(j => (int)j.TypeJoke == 2)
+                    .OrderBy(j => j.TypeJoke)
+                    .ToList();
+
+                var totalCount = jokes.Count();
+                jokes = jokes.Skip((page - 1) * PageSize).Take(PageSize).ToList();
+
+                var model = new JokesViewModel
+                {
+                    Jokes = jokes,
+                    PagingInfo = new PagingInfo
+                    {
+                        CurrentPage = page,
+                        ItemsPerPage = PageSize,
+                        TotalItems = totalCount
+                    }
+                };
+
+                return View(model);
+            }
+            else
+            {
+                // Обробка випадку, коли відповідь не є OK
+                return RedirectToAction("Error");
+            }
+        }
 
 
 
@@ -136,13 +273,13 @@ namespace JokeJunction.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Save(JokeViewModel model)
+        public async Task<IActionResult> Save(JokeViewModel model,ApplicationUser user)
         {
             if (ModelState.IsValid)
             {
                 if (model.Id == 0)
                 {
-                    await _carService.CreateJoke(model);
+                    await _carService.CreateJoke(model,user);
                 }
                 else
                 {

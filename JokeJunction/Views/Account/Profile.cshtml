@@ -1,0 +1,126 @@
+﻿@model JokeJunction.Domain.Entity.ApplicationUser
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+
+<div class="profile_container">
+    <div class="profile_container_title">
+        Вітаю, @Model.UserName   !
+    </div>
+
+    <div class="jokes_list">
+        <h2>Ваші жарти:</h2>
+        <ul>
+            @foreach (var item in Model.Jokes)
+            {
+                <li class="joke_item" id="@item.Id">
+                    @item.Name
+                    <div class="joke_icons">
+                        <div class="ellipsis" onclick="toggleOptionsMenu(this)"></div>
+                        <span class="trash_can" onclick="openModal(this, @item.Id)"></span>
+                    </div>
+                    <div class="options_menu">
+                        <div class="edit_option">Редагувати</div>
+                        <div class="delete_option" onclick="openModal(this, @item.Id)">Видалити</div>
+                    </div>
+                </li>
+            }
+
+            <!-- Додайте більше жартів за необхідності -->
+        </ul>
+    </div>
+</div>
+
+<div class="modal" id="deleteModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Ви впевнені, що хочете видалити?</p>
+        <div class="button-container">
+            <button onclick="deleteItem()">Так</button>
+            <button onclick="closeModal()">Ні</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    var jokeIdToDelete;
+
+    function openModal(element, jokeId) {
+        jokeIdToDelete = jokeId;
+        var modal = document.getElementById('deleteModal');
+        modal.style.display = 'block';
+        modal.dataset.jokeId = jokeId;
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('deleteModal');
+        modal.style.display = 'none';
+    }
+
+    function deleteItem(element) {
+        var jokeId = jokeIdToDelete;
+
+        // Виконуємо AJAX-запит для видалення жарту
+        $.ajax({
+            url: '/Account/DeleteJoke', // Ось тут виправлено URL
+            type: 'POST',
+            data: { jokeId: jokeId },
+            success: function (response) {
+                // Видалити елемент зі списку
+                var jokeItem = document.getElementById(jokeId);
+                if (jokeItem) {
+                    jokeItem.remove();
+                }
+
+                // Закрити модальне вікно
+                closeModal();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error deleting joke:", error);
+            }
+        });
+    }
+</script>
+
+<script>
+    document.addEventListener('click', function (event) {
+        var isOptionsMenuClicked = event.target.classList.contains('ellipsis');
+
+        if (!isOptionsMenuClicked) {
+            // Закриває всі відкриті меню при кліку за межами options_menu
+            closeAllMenus();
+        }
+    });
+
+    function toggleOptionsMenu(ellipsis) {
+        // Знаходження батьківського елемента li
+        var jokeItem = ellipsis.closest('.joke_item');
+
+        // Знаходження елемента options_menu для цього конкретного жарту
+        var optionsMenu = jokeItem.querySelector('.options_menu');
+
+        // Закриває всі відкриті меню перед показом поточного
+        closeAllMenus();
+
+        // Отримання позиції елемента ellipsis
+        var ellipsisRect = ellipsis.getBoundingClientRect();
+
+        // Встановлення позиції для options_menu
+        optionsMenu.style.top = ellipsisRect.bottom + 'px';
+        optionsMenu.style.left = ellipsisRect.left - (optionsMenu.offsetWidth / 2) - 20 + 'px';
+
+        // Переключення видимості меню
+        optionsMenu.classList.toggle('visible');
+    }
+
+    function closeAllMenus() {
+        var allMenus = document.querySelectorAll('.options_menu');
+        allMenus.forEach(menu => {
+            menu.classList.remove('visible');
+        });
+    }
+</script>

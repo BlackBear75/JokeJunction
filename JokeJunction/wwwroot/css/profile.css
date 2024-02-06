@@ -1,0 +1,180 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Скидання стилів для списків */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Скидання стилів для таблиць */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Додаткове скидання стилів для інших елементів */
+body,
+h1,
+h2,
+h3,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.main_title {
+    opacity: 0;
+    /* Встановлення початкової прозорості на 0 */
+    transition: opacity 2s ease;
+    /* Застосування анімації для властивості opacity тривалістю 1 секунда і типом ease */
+}
+
+.main_title.show {
+    opacity: 1;
+    /* Зміна прозорості на 1 при додаванні класу .show */
+}
+
+
+.profile_container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile_container_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.jokes_list {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.joke_item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.joke_icons {
+    display: flex;
+}
+
+.ellipsis {
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/three-dots.png');
+    /* Замініть на ваш значок корзини */
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.trash_can {
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/trash.png');
+    /* Замініть на ваш значок корзини */
+    background-size: cover;
+    cursor: pointer;
+}
+
+    .trash_can:hover {
+        filter: brightness(1.5);
+    }
+
+.ellipsis:hover {
+    filter: brightness(1.5);
+    background-color: blue;
+    /* Замініть на ваш колір */
+}
+
+.trash_can:hover {
+    filter: brightness(1.5);
+    background-color: red;
+    /* Замініть на ваш колір */
+}
+
+.options_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.options_menu div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .options_menu div:hover {
+        background-color: #e0e0e0;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover {
+        color: black;
+    }
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}

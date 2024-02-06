@@ -15,11 +15,13 @@ namespace JokeJunction.DAL.Repositories
         {
             _db = db;
         }
-
+        
         public async Task<bool> Create(Joke entity)
         {
+
             await _db.Jokes.AddAsync(entity);
             await _db.SaveChangesAsync();
+            
 
             return true;
         }
@@ -38,7 +40,6 @@ namespace JokeJunction.DAL.Repositories
         {
             _db.Jokes.Remove(entity);
             await _db.SaveChangesAsync();
-
             return true;
         }
 
@@ -53,6 +54,16 @@ namespace JokeJunction.DAL.Repositories
         public async Task<Joke> GetByScore(int score)
         {
             return await _db.Jokes.FirstOrDefaultAsync(x => x.Score == score);
+        }
+
+        public async Task<List<Joke>> GetUserJoke(ApplicationUser user)
+        {
+
+            return await _db.Jokes
+                .Where(j => j.UserId == user.Id)
+                .ToListAsync();
+
+           
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dlOkVXmSdpJwPzgEqyEZ/q+N6+FW4vg/cIJ0H3Leswc=",
+  "Hash": "2+Gk817eAFenTm8lHcIwF28Cjb/pBUDsAU/6fZ6+2ok=",
   "Source": "JokeJunction",
   "BasePath": "_content/JokeJunction",
   "Mode": "Default",
@@ -49,40 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\JokeJunction.bundle.scp.css"
-    },
-    {
-      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\backImage.css",
-      "SourceId": "JokeJunction",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
-      "BasePath": "_content/JokeJunction",
-      "RelativePath": "css/backImage.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\backImage.css"
-    },
-    {
-      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\card.css",
-      "SourceId": "JokeJunction",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
-      "BasePath": "_content/JokeJunction",
-      "RelativePath": "css/card.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\card.css"
     },
     {
       "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\Creative.css",
@@ -289,6 +255,40 @@
       "OriginalItemSpec": "wwwroot\\css\\images\\POCHTA-whete.png"
     },
     {
+      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\three-dots.png",
+      "SourceId": "JokeJunction",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
+      "BasePath": "_content/JokeJunction",
+      "RelativePath": "css/images/three-dots.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\three-dots.png"
+    },
+    {
+      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\images\\trash.png",
+      "SourceId": "JokeJunction",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
+      "BasePath": "_content/JokeJunction",
+      "RelativePath": "css/images/trash.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\trash.png"
+    },
+    {
       "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\index.css",
       "SourceId": "JokeJunction",
       "SourceType": "Discovered",
@@ -321,23 +321,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\joke.css"
-    },
-    {
-      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\label.css",
-      "SourceId": "JokeJunction",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
-      "BasePath": "_content/JokeJunction",
-      "RelativePath": "css/label.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\label.css"
     },
     {
       "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\login.css",
@@ -374,12 +357,12 @@
       "OriginalItemSpec": "wwwroot\\css\\menu.css"
     },
     {
-      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\paragraph.css",
+      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\profile.css",
       "SourceId": "JokeJunction",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
       "BasePath": "_content/JokeJunction",
-      "RelativePath": "css/paragraph.css",
+      "RelativePath": "css/profile.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -388,7 +371,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\paragraph.css"
+      "OriginalItemSpec": "wwwroot\\css\\profile.css"
     },
     {
       "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\Pronas.css",
@@ -423,23 +406,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
-    },
-    {
-      "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\css\\site.css",
-      "SourceId": "JokeJunction",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\",
-      "BasePath": "_content/JokeJunction",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\wwwroot\\favicon.ico",

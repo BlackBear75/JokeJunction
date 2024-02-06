@@ -6,5 +6,9 @@ namespace JokeJunction.DAL.Interfaces
     public interface IJokeRepository : IBaseRepository<Joke>
     {
         Task<Joke> GetByScore(int score);
+
+        Task<List<Joke>> GetUserJoke(ApplicationUser user);
+
+       
     }
 }

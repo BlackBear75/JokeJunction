@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,8 +40,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxCbGFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Code.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxDb2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/GetJokes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxHZXRKb2tlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Humorous.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxIdW1vcm91cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/IT_Joke.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxJVF9Kb2tlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Politic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxQb2xpdGljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Pronas/Pronas.cshtml]
