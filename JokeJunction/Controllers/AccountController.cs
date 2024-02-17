@@ -2,6 +2,8 @@
 using JokeJunction.Domain.ViewModels.Account;
 using JokeJunction.Domain.ViewModels.Joke;
 using JokeJunction.Service.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -81,14 +83,6 @@ namespace JokeJunction.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout()
-        {
-            await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
-        }
-
 
 		public async Task<IActionResult> Profile()
 		{
@@ -101,15 +95,17 @@ namespace JokeJunction.Controllers
 
             var response = await _jokeService.GetUserJoke(user);
 
-            
-
-            foreach(var item in response.Data)
+            if (response.StatusCode == Domain.Enum.StatusCode.OK)
             {
-                user.Jokes.Add(item);
-            }
 
-            // Передати модель користувача в представлення
-            return View(user);
+                foreach (var item in response.Data)
+                {
+                    user.Jokes.Add(item);
+                }
+            }
+                return View(user);
+            
+           
 		}
 
         [HttpPost]

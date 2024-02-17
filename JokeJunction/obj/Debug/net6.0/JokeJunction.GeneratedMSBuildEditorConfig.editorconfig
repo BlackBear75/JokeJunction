@@ -9,77 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JokeJunction
 build_property.RootNamespace = JokeJunction
-build_property.ProjectDir = E:\C#LAB\aspnet\JokeJunction\JokeJunction\
+build_property.ProjectDir = E:\C#LAB\aspnet\JokeJunction kopa – копія (3) – копія\JokeJunction\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = E:\C#LAB\aspnet\JokeJunction\JokeJunction
+build_property.MSBuildProjectDirectory = E:\C#LAB\aspnet\JokeJunction kopa – копія (3) – копія\JokeJunction
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Account/Login.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Account/Profile.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Account/Register.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Creative/Creative.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Creative/Creative.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRpdmVcQ3JlYXRpdmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Home/Index.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Black.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/Black.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxCbGFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Code.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/Code.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxDb2RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/GetJokes.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/GetJokes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxHZXRKb2tlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Humorous.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/Humorous.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxIdW1vcm91cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/IT_Joke.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/IT_Joke.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxJVF9Kb2tlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Joke/Politic.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Joke/Politic.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9rZVxQb2xpdGljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Pronas/Pronas.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Pronas/Pronas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbmFzXFByb25hcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Shared/Error.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/_ViewImports.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/_ViewStart.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/C\#LAB/aspnet/JokeJunction/JokeJunction/Views/Shared/_Layout.cshtml]
+[E:/C\#LAB/aspnet/JokeJunction kopa – копія (3) – копія/JokeJunction/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xm3pg6i2yu

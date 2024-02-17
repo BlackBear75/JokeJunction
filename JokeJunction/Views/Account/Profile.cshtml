@@ -15,19 +15,22 @@
     <div class="jokes_list">
         <h2>Ваші жарти:</h2>
         <ul>
-            @foreach (var item in Model.Jokes)
+            @if (User.Identity.IsAuthenticated)
             {
-                <li class="joke_item" id="@item.Id">
-                    @item.Name
-                    <div class="joke_icons">
-                        <div class="ellipsis" onclick="toggleOptionsMenu(this)"></div>
-                        <span class="trash_can" onclick="openModal(this, @item.Id)"></span>
-                    </div>
-                    <div class="options_menu">
-                        <div class="edit_option">Редагувати</div>
-                        <div class="delete_option" onclick="openModal(this, @item.Id)">Видалити</div>
-                    </div>
-                </li>
+                @foreach (var item in Model.Jokes)
+                {
+                    <li class="joke_item" id="@item.Id">
+                        @item.Name
+                        <div class="joke_icons">
+                            <div class="ellipsis" onclick="toggleOptionsMenu(this)"></div>
+                            <span class="trash_can" onclick="openModal(this, @item.Id)"></span>
+                        </div>
+                        <div class="options_menu">
+                            <div class="edit_option">Редагувати</div>
+                            <div class="delete_option" onclick="openModal(this, @item.Id)">Видалити</div>
+                        </div>
+                    </li>
+                }
             }
 
             <!-- Додайте більше жартів за необхідності -->
@@ -85,6 +88,65 @@
         });
     }
 </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const ratingElement = document.querySelector('.rating');
+        const decrementButton = document.querySelector('#decrement');
+        const incrementButton = document.querySelector('#increment');
+        const rateButton = document.querySelector('.rate-button');
+
+        decrementButton.addEventListener('click', function () {
+            let rating = parseInt(ratingElement.textContent);
+            if (rating > 0) {
+                ratingElement.textContent = rating - 1;
+            }
+        });
+
+        incrementButton.addEventListener('click', function () {
+            let rating = parseInt(ratingElement.textContent);
+            if (rating < 100) {
+                ratingElement.textContent = rating + 1;
+            }
+        });
+
+        ratingElement.addEventListener('keydown', function (event) {
+            if (!(/[0-9]/.test(event.key) || event.key === 'Backspace' || event.key === 'Delete')) {
+                event.preventDefault();
+            }
+        });
+
+        ratingElement.addEventListener('input', function () {
+            let rating = parseInt(this.textContent);
+            if (isNaN(rating) || rating < 0) {
+                this.textContent = '0';
+            } else if (rating > 100) {
+                this.textContent = '100';
+            }
+        });
+
+        rateButton.addEventListener('mouseover', function () {
+            rateButton.style.backgroundColor = '#0056b3';
+        });
+
+        rateButton.addEventListener('mouseout', function () {
+            rateButton.style.backgroundColor = '#007bff';
+        });
+
+        rateButton.addEventListener('click', function () {
+            // Додайте код для обробки кліку на кнопку "Оцінити" тут
+            // Наприклад, можна додати логіку відправки оцінки на сервер або щось інше
+        });
+    });
+</script>
+
+
+
+
+
+
+
 
 <script>
     document.addEventListener('click', function (event) {

@@ -2918,11 +2918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\JokeJunction.csproj",
+      "projectUniqueName": "E:\\C#LAB\\aspnet\\JokeJunction kopa – копія (3) – копія\\JokeJunction\\JokeJunction.csproj",
       "projectName": "JokeJunction",
-      "projectPath": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\JokeJunction.csproj",
+      "projectPath": "E:\\C#LAB\\aspnet\\JokeJunction kopa – копія (3) – копія\\JokeJunction\\JokeJunction.csproj",
       "packagesPath": "C:\\Users\\drake\\.nuget\\packages\\",
-      "outputPath": "E:\\C#LAB\\aspnet\\JokeJunction\\JokeJunction\\obj\\",
+      "outputPath": "E:\\C#LAB\\aspnet\\JokeJunction kopa – копія (3) – копія\\JokeJunction\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\drake\\AppData\\Roaming\\NuGet\\NuGet.Config",

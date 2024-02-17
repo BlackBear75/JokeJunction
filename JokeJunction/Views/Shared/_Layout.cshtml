@@ -31,8 +31,10 @@
 					<ul class="dropdown_menu" id="dropdownMenu">
 						<li><a href="/Account/Login">Увійти</a></li>
 						<li><a href="/Account/Register">Реєстрація</a></li>
-						@if (User.Identity.IsAuthenticated){
-						<li><a href="/Account/Profile">Профіль</a></li>
+						@if (User.Identity.IsAuthenticated)
+						{
+							<li><a href="/Account/Profile">Профіль</a></li>
+						
 						}
 					</ul>
 				</li>
@@ -54,6 +56,7 @@
    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var dropdownMenu = document.getElementById("dropdownMenu");

@@ -20,6 +20,17 @@ namespace JokeJunction.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> Error()
+        {
+
+            return View();
+        }
+
+
+
+
+
+        [HttpGet]
         public async Task<IActionResult> GetJokes(int page = 1)
         {
             var response = await _carService.GetJokes();

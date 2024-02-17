@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using JokeJunction.Domain.Entity;
 using JokeJunction.Domain.Enum;
 using Microsoft.AspNetCore.Http;
 
@@ -15,8 +16,7 @@ namespace JokeJunction.Domain.ViewModels.Joke
 
         public int Score { get; set; }
 
-
-
+      
         public string TypeJoke { get; set; }
         
       

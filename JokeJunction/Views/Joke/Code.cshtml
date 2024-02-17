@@ -7,12 +7,34 @@
 <div class="main_joke">
     <div class="main_text">
         <ul>
-           
-            @foreach (var joke in Model.Jokes)
-            {
-                <li>@joke.Name <br> @joke.Id  @joke.Content</li>
-                <br />
+
+            
+                <ul>
+                    @foreach (var joke in Model.Jokes)
+                    {
+                        <li class="li-flex">
+                            @joke.Name
+                            @joke.Number @joke.Content
+                            <span class="right-items">
+                                <div class="average-rating">
+                                    <span>Середній бал: <span class="average"> @joke.AverageRating </span></span>
+                                    <span>Кількість голосів: <span class="votes">@joke.UserVotes</span></span>
+                                </div>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <span class="rating-box">
+                                        <img class="icon" src="~/css/images/minus-2.png" data-action="decrement" id="decrement_@joke.Id" alt="-">
+                                        <span class="rating" contenteditable="true" id="rating_@joke.Id">50</span>
+                                        <img class="icon" src="~/css/images/plus-2.png" data-action="increment" id="increment_@joke.Id" alt="+">
+                                    </span>
+                                    <button class="rate-button" data-joke-id="@joke.Id">Оцінити</button>
+                                }
+                            </span>
+                        </li>
+                    }
+                </ul>
             }
+           
         </ul>
     </div>
 
@@ -39,6 +61,156 @@
         }
     </ul>
 </nav>
+  @if (User.Identity.IsAuthenticated)
+{
+    <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+        const ratingBoxes = document.querySelectorAll('.li-flex');
+
+        for (const box of ratingBoxes) {
+
+            const ratingElement = box.querySelector('.rating');
+            const decrementButton = box.querySelector('.icon[data-action="decrement"]');
+            const incrementButton = box.querySelector('.icon[data-action="increment"]');
+            const rateButton = box.querySelector('.rate-button');
+
+            decrementButton.addEventListener('click', function () {
+                let rating = parseInt(ratingElement.textContent);
+                if (rating > 0) {
+                    ratingElement.textContent = rating - 1;
+                }
+            });
+
+            incrementButton.addEventListener('click', function () {
+                let rating = parseInt(ratingElement.textContent);
+                if (rating < 100) {
+                    ratingElement.textContent = rating + 1;
+                }
+            });
+
+            ratingElement.addEventListener('keydown', function (event) {
+                if (!(/[0-9]/.test(event.key) || event.key === 'Backspace' || event.key === 'Delete')) {
+                    event.preventDefault();
+                }
+            });
+
+            ratingElement.addEventListener('input', function () {
+                let rating = parseInt(this.textContent);
+                if (isNaN(rating) || rating < 0) {
+                    this.textContent = '0';
+                } else if (rating > 100) {
+                    this.textContent = '100';
+                }
+            });
+            rateButton.addEventListener('click', function () {
+                rateJoke(rateButton, ratingElement);
+            });
+
+            rateButton.addEventListener('click', function () {
+                removeRating(rateButton, ratingElement);
+            });
+          
+
+            // Функція, яка перевіряє стан оцінки жарту
+            async function checkRating() {
+                const jokeId = rateButton.getAttribute('data-joke-id');
+
+                try {
+                    // Виконуємо запит на сервер, щоб перевірити стан оцінки жарту
+                    const response = await fetch(`/Rating/CheckUserRating?jokeId=${jokeId}`);
+                    const data = await response.json();
+                    
+
+                    if (response.ok) {
+                        if (data) {
+                            // Користувач вже оцінив жарт, показуємо кнопку "Видалити оцінку"
+                            rateButton.textContent = 'Видалити свою оцінку';
+                            rateButton.style.backgroundColor = 'red';
+                          
+                            rateButton.addEventListener('click', removeRating);
+                        } else {
+                            // Користувач ще не оцінив жарт, показуємо кнопку "Оцінити"
+                            rateButton.textContent = 'Оцінити';
+                            rateButton.style.backgroundColor = 'blue';
+                          
+                            rateButton.addEventListener('click', rateJoke);
+                        }
+                    } else {
+                        console.error('Failed to check user rating');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+
+
+            
+            }
+
+           await checkRating();
+        }
+    });
+    </script>
+
+    }
+    <script>
+
+
+    async function rateJoke(rateButton, ratingElement) {
+                const jokeId = rateButton.getAttribute('data-joke-id');
+                const rating = ratingElement.textContent;
+
+                try {
+                    // Виконуємо запит на сервер для оцінки жарту
+                    const response = await fetch(`/Rating/RateJoke?jokeId=${jokeId}&rating=${rating}`, {
+                        method: 'POST'
+                        // Інші параметри запиту (якщо потрібно)
+                    });
+
+                    if (response.ok) {
+                        // Оцінено коректно, тому ми замінюємо вміст кнопки та колір
+                        rateButton.textContent = 'Видалити свою оцінку';
+                        rateButton.style.backgroundColor = 'red';
+                        // Змінюємо обробник події на видалення оцінки
+                       
+                        rateButton.addEventListener('click', removeRating);
+                    } else {
+                        console.error('Failed to rate joke');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+
+            // Функція для видалення оцінки жарту
+    async function removeRating(rateButton, ratingElement) {
+                const jokeId = rateButton.getAttribute('data-joke-id');
+
+                try {
+                    // Виконуємо запит на сервер для видалення оцінки жарту
+                    const removeResponse = await fetch(`/Rating/RemoveJokeRating?jokeId=${jokeId}`, {
+                        method: 'POST'
+                        // Інші параметри запиту (якщо потрібно)
+                    });
+
+                    if (removeResponse.ok) {
+                        // Оновлюємо сторінку або виконуємо інші дії за необхідності
+                        rateButton.textContent = 'Оцінити';
+                        rateButton.style.backgroundColor = 'blue'; // Повертаємо колір за замовчуванням
+                        // Змінюємо обробник події на оцінювання
+                      
+                        rateButton.addEventListener('click', rateJoke);
+                    } else {
+                        console.error('Failed to remove rating');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+      
+</script>
+
+
+
 
 
 <script>

@@ -32,12 +32,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
+
 // Додайте сервіси
 builder.Services.AddScoped<IJokeRepository, JokeRepository>();
 builder.Services.AddScoped<IJokeService, JokeService>();
 
 // Додайте службу контролерів з підтримкою Razor Runtime Compilation
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
+
 
 var app = builder.Build();
 
